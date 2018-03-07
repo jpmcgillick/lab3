@@ -1,19 +1,43 @@
 <html>
   <head>
-    <title>My Super-duper Awesome Webpage!</title>
     <style>
-      h1 {
-      color: #ff00ff;
-      background: black;
-      } 
+      body {background-color: orange;}
+      h1 {color: green;
+          font-size: 45px;
+      }
+      h2 {color: green;
+          font-size: 30px;
+      }
+      p {color: blue;
+         font-size: 18px;
+      }
     </style>
+    <title>Here's a really basic webpage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+     $("p").click(function(){
+        $(this).hide();
+      });
+     });
+  </script>
   </head>
   <body>
-    <h1>Welcome to my page!</h1>
+    <h1>Header h1! It's 45 px font!</h1>
     <p>
      Hello world! This is my page about stuff!
     </p>
+    <h2>Header with size 2! Look how it's 30px font!</h2>
+    <p>
+      This is another paragraph under header 2! Amazing, right!?
+    </p>
+    <h2>Here's some more stuff!</h2>
+    <p>
+      Try clicking on the paragraphs, including this one!
+    </p>
+    <p>
+      Here's a gif for your troubles!<br>
+      <img src = "https://media1.tenor.com/images/b5a9f1e9bf32dcb5d338c3fadead5e3e/tenor.gif?itemid=5785816">
+    </p>
   </body>
-
-
 </html>

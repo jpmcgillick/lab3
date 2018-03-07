@@ -20,7 +20,17 @@
         $(this).hide();
       });
      });
-  </script>
+    </script>
+    <script>
+      $(document).ready(function(){
+      $("h1").hover(function(){
+      alert("You hovered over h1");
+      },
+      function(){
+      alert("Bye! You're no longer hovering over h1!");
+      }); 
+      });
+    </script>
   </head>
   <body>
     <h1>Header h1! It's 45 px font!</h1>
@@ -34,6 +44,9 @@
     <h2>Here's some more stuff!</h2>
     <p>
       Try clicking on the paragraphs, including this one!
+    </p>
+    <p>
+      Try hovering over h1! It's super annoying!
     </p>
     <p>
       Here's a gif for your troubles!<br>
